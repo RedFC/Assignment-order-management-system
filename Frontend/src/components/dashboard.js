@@ -5,6 +5,7 @@ import { ChartViewer } from './chartViewer';
 import { CubeProvider } from '@cubejs-client/react';
 
 const Dashboard = () => {
+
     return (
         <>
             <CubeProvider cubeApi={cubejsApi}>

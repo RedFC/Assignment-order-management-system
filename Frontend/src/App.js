@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/dashboard';
 import ProductList from './components/productList';
-
 function App() {
+  
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const BASEURL = "http://127.0.0.1:3000";
+const BASEURL = process.env.REACT_APP_API_URL;
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -12,6 +12,7 @@ const ProductList = () => {
     let [qty, setQty] = useState(0);
 
     useEffect(() => {
+        
         const fetchProducts = async () => {
             const result = await axios.get(BASEURL + '/products');
             setProducts(result.data);
