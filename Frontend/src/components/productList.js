@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const BASEURL = process.env.REACT_APP_API_URL;
+const BASEURL = process.env.REACT_APP_SERVER_BASE_URL;
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
